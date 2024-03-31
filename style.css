@@ -270,7 +270,7 @@ nav ul li:hover::after {
   line-height: 30px;
   text-align: center;
 }
-.facility-col h3{
+.facility-col h3 {
   font-size: 26px;
 }
 .facility-main p {
@@ -317,7 +317,6 @@ nav ul li:hover::after {
 }
 /* _____testmonial_____ */
 .testimonial {
-  min-height: 100vh;
   margin: 0 auto;
   align-items: center;
   font-size: 24px;
@@ -341,15 +340,17 @@ nav ul li:hover::after {
   display: flex;
   flex-direction: row;
   column-gap: 45px;
-  row-gap: 30px;
   justify-content: center;
 }
-.testimonial-main a {
-  display: block;
+.testimonial-main a{
+  text-decoration: none;
   color: black;
+  
 }
 .testimonial-col {
+  max-width: 30vw;
   background-color: #fdd0cd;
+  color : black;
   border-radius: 10px;
   margin-bottom: 5px;
   overflow: hidden;
@@ -388,9 +389,13 @@ nav ul li:hover::after {
     flex-direction: column;
     row-gap: 30px;
     text-align: center;
-    .testimonial-col p {
-      text-align: center;
-    }
+  }
+  .testimonial-col p {
+    text-align: center;
+  }
+  .testimonial-col{
+    max-width: 85vw;
+    margin: 0 auto;
   }
 }
 /* _________________contact____________________ */
@@ -421,12 +426,61 @@ nav ul li:hover::after {
   border-radius: 10px;
   margin: 20px 5px 0 20px;
 }
+.contact-title{
+  display: flex;
+  max-width: fit-content;
+  margin: 0 auto;
+}
 .contact .hero-btn {
-  justify-content: center;
-  align-self: center;
+  margin: 0 auto;
 }
 @media screen and (max-width: 700px) {
   .contact h1 {
     font-size: 30px;
   }
+}
+/* _________________footer____________________ */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+  line-height: 30px;
+}
+footer p {
+  margin-bottom: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer i {
+  margin: 0 10px;
+}
+footer i:hover {
+  color: red;
+  transition: 0.3s;
+}
+footer .fa-heart {
+  color: red;
+}
+.fa-facebook:hover {
+  color: blue;
+}
+.fa-linkedin:hover {
+  color: blue;
+}
+.fa-twitter:hover {
+  color: lightblue;
+}
+.fa-instagram:hover {
+  color: pink;
+}
+.fa-github:hover {
+  color: rgb(109, 109, 109);
 }
