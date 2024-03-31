@@ -1,9 +1,9 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 header {
   min-height: 100vh;
@@ -85,7 +85,6 @@ nav ul li:hover::after {
   .text-box h1 {
     font-size: 30px;
   }
-    
 }
 /* ------main------- */
 
@@ -151,11 +150,10 @@ nav ul li:hover::after {
   margin: 10px 0;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 700px) {
   .course-main {
     flex-direction: column;
     row-gap: 30px;
-
   }
 }
 /* -----campus------ */
@@ -197,29 +195,29 @@ nav ul li:hover::after {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
 }
-.campus-title{
+.campus-title {
   text-align: center;
   font-weight: 600;
   padding: 10px 0;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 700px) {
   .campus-main {
     flex-direction: column;
     row-gap: 30px;
   }
 }
 .campus-col {
- flex-basis: 31%;
- border-radius: 10px;
- margin-bottom: 5px;
- position: relative;
- overflow: hidden;
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  position: relative;
+  overflow: hidden;
 }
-.campus-col img{
+.campus-col img {
   width: 100%;
 }
-.layer{
-  background: transparent; 
+.layer {
+  background: transparent;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -232,10 +230,10 @@ nav ul li:hover::after {
   font-size: 24x;
   transition: 0.5s;
 }
-.layer:hover{
+.layer:hover {
   background: rgba(226, 0, 0, 0.7);
 }
-.layer h3{
+.layer h3 {
   width: 100%;
   font-weight: 500;
   color: white;
@@ -247,7 +245,7 @@ nav ul li:hover::after {
   opacity: 0;
   transition: 0.5s;
 }
-.layer:hover h3{
+.layer:hover h3 {
   bottom: 49%;
   opacity: 1;
 }
@@ -265,54 +263,57 @@ nav ul li:hover::after {
   font-weight: 600;
   margin: 10px 0;
 }
-.facility-title p{
+.facility-title p {
   font-size: 18px;
   margin-bottom: 15px;
   color: gray;
   line-height: 30px;
   text-align: center;
-
 }
-.facility h1 {
-  font-size: 45px;
-  margin-bottom: 10px;
+.facility-col h3{
+  font-size: 26px;
 }
 .facility-main p {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 15px;
   color: gray;
   line-height: 30px;
   text-align: left;
 }
-.facility-main{
+.facility-main {
   margin-top: 40px;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   column-gap: 45px;
   row-gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
 }
-.facility-col{
+.facility-col {
   flex-basis: 31%;
+  text-align: center;
   border-radius: 10px;
   margin-bottom: 5px;
   position: relative;
   overflow: hidden;
 }
-.facility-col img{
+.facility-col img:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.facility-col img {
   width: 100%;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 700px) {
   .facility-main {
     flex-direction: column;
     row-gap: 30px;
     text-align: center;
-    .facility-col p{
+    .facility-col p {
       text-align: center;
     }
   }
-    
 }
 /* _____testmonial_____ */
 .testimonial {
@@ -328,48 +329,104 @@ nav ul li:hover::after {
   font-weight: 600;
   padding: 10px 0;
 }
-.testimonial-title p{
+.testimonial-title p {
   font-size: 18px;
   margin-bottom: 15px;
   color: gray;
   line-height: 30px;
   text-align: center;
 }
-.testimonial-main{
+.testimonial-main {
   margin-top: 40px;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   column-gap: 45px;
   row-gap: 30px;
-  flex-wrap: wrap;
   justify-content: center;
 }
-.testimonial-col{  
-  display: flex;
-  flex-basis: 45%;
+.testimonial-main a {
+  display: block;
+  color: black;
+}
+.testimonial-col {
   background-color: #fdd0cd;
   border-radius: 10px;
   margin-bottom: 5px;
-  position: relative;
   overflow: hidden;
+  flex-basis: 31%;
+  transition: 0.5s;
 }
-.testimonial-col img{
-  width: 50px;
+.testimonial-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.testimonial-col img {
+  height: 50px;
   border-radius: 50%;
-  margin: auto;
-  padding: 5px;
-  
+  margin: 20px 5px 0 20px;
 }
-.testimonial-col p{
-  margin : 10px;
+.testimonial-col p {
+  margin: 10px;
+  font-size: 18px;
+  margin-left: 15px;
+  color: gray;
+  line-height: 30px;
+  text-align: left;
+}
+.testimonial-col h3 {
+  margin: 15px;
+  font-weight: 600;
+  font-size: larger;
+}
+.stars {
+  color: orange;
+  margin-left: 15px;
+}
+@media screen and (max-width: 700px) {
+  .testimonial-main {
+    flex-direction: column;
+    row-gap: 30px;
+    text-align: center;
+    .testimonial-col p {
+      text-align: center;
+    }
+  }
+}
+/* _________________contact____________________ */
+.contact {
+  margin: 100px auto;
+  min-height: 50vh;
+  font-size: 18px;
+  padding: 50px;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(/img/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.contact h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+  color: white;
+}
+.contact p {
   font-size: 18px;
   margin-bottom: 15px;
   color: gray;
   line-height: 30px;
   text-align: left;
-
 }
-.testimonial-col h3{
-  font-weight: 600;
-  font-size: larger;
+.contact img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 5px 0 20px;
+}
+.contact .hero-btn {
+  justify-content: center;
+  align-self: center;
+}
+@media screen and (max-width: 700px) {
+  .contact h1 {
+    font-size: 30px;
+  }
 }
