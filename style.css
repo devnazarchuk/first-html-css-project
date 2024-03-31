@@ -59,17 +59,11 @@ nav ul li:hover::after {
   font-size: 55px;
   margin-bottom: 10px;
 }
-.hero-btn:hover {
-  color: white;
-  border: 2px solid rgb(252, 40, 40);
-  font-size: 18px;
-  font-weight: bold;
-  background: rgb(252, 40, 40);
-  transition: 0.5s;
-}
 .hero-btn {
+  display: flex;
+  max-width: max-content;
+  margin: 0 auto;
   text-decoration: none;
-  display: inline-block;
   border: 2px solid white;
   border-radius: 5px;
   margin-top: 30px;
@@ -78,9 +72,17 @@ nav ul li:hover::after {
   font-size: 18px;
   font-weight: bold;
   background: transparent;
-  align-self: center;
   cursor: pointer;
 }
+.hero-btn:hover {
+  color: white;
+  border: 2px solid rgb(252, 40, 40);
+  font-size: 18px;
+  font-weight: bold;
+  background: rgb(252, 40, 40);
+  transition: 0.5s;
+}
+
 @media screen and (max-width: 700px) {
   .text-box h1 {
     font-size: 30px;
@@ -342,15 +344,14 @@ nav ul li:hover::after {
   column-gap: 45px;
   justify-content: center;
 }
-.testimonial-main a{
+.testimonial-main a {
   text-decoration: none;
   color: black;
-  
 }
 .testimonial-col {
   max-width: 30vw;
   background-color: #fdd0cd;
-  color : black;
+  color: black;
   border-radius: 10px;
   margin-bottom: 5px;
   overflow: hidden;
@@ -393,7 +394,7 @@ nav ul li:hover::after {
   .testimonial-col p {
     text-align: center;
   }
-  .testimonial-col{
+  .testimonial-col {
     max-width: 85vw;
     margin: 0 auto;
   }
@@ -426,7 +427,7 @@ nav ul li:hover::after {
   border-radius: 10px;
   margin: 20px 5px 0 20px;
 }
-.contact-title{
+.contact-title {
   display: flex;
   max-width: fit-content;
   margin: 0 auto;
