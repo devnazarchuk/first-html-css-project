@@ -467,10 +467,10 @@ footer a {
   background: #00000042;
   border-radius: 50%; ;
   color: black;
-  padding: 5px;
+  padding: 10px;
 }
 footer i {
-  padding: 5px;
+  padding: 10px 5px;
 }
 footer a i:hover {
   color: red;
