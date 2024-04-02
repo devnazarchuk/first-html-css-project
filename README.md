@@ -1,3 +1,5 @@
-This is the university's website or rather its template
-This is my first html css only project
-I am learning how to use github
+This is the university's website or rather its template.
+
+I made it adaptive to mobile phone.
+
+Next i will write here feautures xd.
