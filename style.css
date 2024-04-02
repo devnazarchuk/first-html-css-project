@@ -130,8 +130,6 @@ nav .fa {
     background: #f44336;
     min-height: 70vh;
     width: 40vw;
-    top: 0;
-    right: 0;
     text-align: left;
     transition: 1s;
   }
@@ -537,9 +535,6 @@ footer a i:hover {
   flex-basis: 48%;
   padding: 30px 2px;
 }
-.about-col img {
-  width: 100%;
-}
 .about-col h1 {
   padding-top: 0;
 }
@@ -573,9 +568,6 @@ footer a i:hover {
 }
 .blog-left {
   flex-basis: 65%;
-}
-.blog-left img {
-  width: 100%;
 }
 .blog-left h2 {
   color: #222;
