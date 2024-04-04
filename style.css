@@ -18,7 +18,7 @@ header {
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(/img/banner.png);
+    url(img/banner.png);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -443,7 +443,7 @@ nav .fa {
   min-height: 50vh;
   padding: 30px;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(/img/banner2.jpg);
+    url(img/banner2.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -515,7 +515,7 @@ footer a i:hover {
   height: 70vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(/img/background.jpg);
+    url(img/background.jpg);
   background-position: center;
   background-size: cover;
   text-align: center;
